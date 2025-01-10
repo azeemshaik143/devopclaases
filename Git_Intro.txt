@@ -1,0 +1,72 @@
+Introduction to Git
+
+VCS:- Version Control System
+SCM:- Source Code Management
+
+VCS:-
+(1)LVCS:- Local Version Control System
+(2)CVLS:- Centralized Version Control System
+(3)DVCS:- Distributed Version Control System
+
+Why need version control?
+
+for collaboration
+for storing
+for figuring out what happened
+for backup
+
+Issues without version control:
+
+*once saved, all the changes mode in the files are permanant and can't be revertback
+*No record of what was done and by whom
+*Downtime that can occur because of a faulty update could cost millions of losses
+
+What is version control?
+	Version control is a system that documents changes mode to a file or a set of files.It alllows 
+multiple uses to manage multiple rivision of the same unit of information.It is a snapshot of your project.
+
+Version Control Types:-
+
+(1) LVC (Local Version Control):-
+	
+	*The practice of having the version database in the local computer.
+	*Local database keeps a record of the changes made to files in version database.
+
+Issue:- Multiple people parallelly working on the same project
+
+Solution:- Centralized Version Control
+
+(2) CVC (Centralized Version Control):-
+
+	* Local version controls isssues are resolved by cvc
+	* In cvc, a central repository is maintained where add the versioned files are kept
+	* Now users can checkout, and check in files from their different computers at any time
+
+Issue:- In case of central server failure whole system goes down
+
+Solution:- Distributed Version Control
+
+(3) DVC (Distributed Version Control):-
+	*version database is stored ar every users local system and at the remote server.
+	*users manipulate he local files and then upload the changes to the remote server.
+	*If any of the servers die, a client server can be used to resolve
+
+What is Git:-
+	Git is an open source distributed version control system which records changes made to the files
+
+Git Commands:-
+	*git --version
+	*git --help
+
+* The remote repository is the server where all the collaborators upload changes made to the files
+* The user modifies existing files and creates new files in this space. Git tracks these changes compared
+  to your local repository
+* workspace is users active directory
+* Stage is a place where all the modified files marked to be comitted are placed
+* Clone command create a copy of an existing remote repository inside the local repository
+* push command pushes all the change made int the local repository to the remote repository
+* pull like fetch, gets all the changes from the remote repository and copies them to the local repository
+* pull merges those changes to the current working directory
+
+.git:- when we clone the repository very first time we will find the two objects like .git folders and README.md which is optional
+
